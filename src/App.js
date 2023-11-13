@@ -1,7 +1,6 @@
 import './App.css';
 import FormPerson from "./pages/FormPerson";
-import FormPersonRefactor from "./pages/FormPerson/FormPessoaRefactor";
-import Evento from './pages/FormPerson/Eventos';
+import Evento from './ComponentEvent';
 
 function App() {
   return (
