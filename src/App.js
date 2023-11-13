@@ -2,6 +2,7 @@ import './App.css';
 import FormPerson from "./pages/FormPerson";
 import Evento from './ComponentEvent';
 import FormPersonRefactor from './pages/FormPerson/FormPessoaRefactor'
+import Condicional from './Condicional';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <FormPerson/>,
       <Evento />
       <FormPersonRefactor />
+      <Condicional />
 
     </div>
   );
