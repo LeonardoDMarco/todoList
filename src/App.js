@@ -6,6 +6,7 @@ import Condicional from './Condicional';
 import { useState } from 'react';
 import SeuNome from './StateLift';
 import Saudacao from './StateLift/saudacao';
+import Button from "./components/Button";
 
 
 
@@ -15,14 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <FormPerson/>
-      <Evento />
-      <FormPersonRefactor />
-      <Condicional />
-
-      <h2>State Lift</h2>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome}/>
+     <Button/>
 
     </div>
   );
