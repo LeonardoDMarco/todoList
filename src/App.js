@@ -1,22 +1,18 @@
 import './App.css';
-import FormPerson from "./pages/FormPerson";
-import Evento from './ComponentEvent';
-import FormPersonRefactor from './pages/FormPerson/FormPessoaRefactor'
-import Condicional from './Condicional';
-import { useState } from 'react';
-import SeuNome from './StateLift';
-import Saudacao from './StateLift/saudacao';
 import Button from "./components/Button";
+import Condicional from './Condicional';
+import Formulario from './Form';
 
 
 
 function App() {
 
-  const [nome, setNome] = useState()
+  
 
   return (
     <div className="App">
-     <Button/>
+     <Formulario />
+     
 
     </div>
   );
