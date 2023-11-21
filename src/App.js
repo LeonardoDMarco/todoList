@@ -1,8 +1,6 @@
 import './App.css';
-import ContadorSenior from './ComponentEvent/contador';
-import Button from "./components/Button";
-import Condicional from './Condicional';
-import Formulario from './Form';
+import Button from './ComponentEvent/button/index';
+
 
 
 
@@ -12,9 +10,8 @@ function App() {
 
   return (
     <div className="App">
-     <Formulario />
-     <ContadorSenior />
-
+    <Button />
+    <title>olá mundo</title>
     </div>
   );
 }
