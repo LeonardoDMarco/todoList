@@ -1,19 +1,19 @@
 import './App.css';
-import Button from "./components/Button";
-import Condicional from './Condicional';
-import Formulario from './Form';
+import Button from './components/Button/index';
+
+import Botao from './styleButton';
+import List from './styleComponent/index';
 
 
 
 function App() {
 
-  
-
   return (
     <div className="App">
-     <Formulario />
+      <Button />
      
-
+     <Botao />
+     <List />
     </div>
   );
 }
