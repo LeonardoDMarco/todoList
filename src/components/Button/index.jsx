@@ -10,7 +10,7 @@ padding: 0.30em 1em;
 border radius: 5px;
 
 &:hover {background: #ff0fa8;
-color: black}
+color: black;}
 
 `;
     
@@ -18,7 +18,7 @@ color: black}
 const Button = ({nome}) => {
     
     return (
-        <ColorButton>Ativar!</ColorButton>
+        <ColorButton>Enviar!</ColorButton>
     );
 };
 
