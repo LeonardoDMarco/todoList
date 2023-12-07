@@ -6,17 +6,23 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const Janio = () => (
     <div>
-        <h1>Users</h1>
+        <h1>Home</h1>
         <ul>
             <li>
-                <Link to={'/'}>Link Home</Link>
+                <Link to={'/'}>Home</Link>
             </li>
             <li>
-                <Link to={'janio'}>Link Janio</Link>
+                <Link to={'contato'}>Contato</Link>
             </li>
+            <li>
+                <Link to={'informações'}>Informações</Link>
+            </li>
+            
         </ul>
     </div>
 )
@@ -25,7 +31,8 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/janio" element={<Janio />} />
+                <Route path="/contato" element={<Janio />} />
+                <Route path="/informações" element={<Janio />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
