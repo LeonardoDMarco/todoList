@@ -6,23 +6,29 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
+import styled from 'styled-components'
+
+const Divisoria = styled.h1`
+    background-color: red;
+    color: blue;
+    
+`;
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const Janio = () => (
     <div>
-        <h1>Home</h1>
+        <Divisoria>Home</Divisoria>
         <ul>
             <li>
                 <Link to={'/'}>Home</Link>
             </li>
             <li>
-                <Link to={'contato'}>Contato</Link>
+                <Link to={'/contato'}>Contato</Link>
             </li>
             <li>
-                <Link to={'informações'}>Informações</Link>
+                <Link to={'/informações'}>Informações</Link>
             </li>
-            
         </ul>
     </div>
 )
@@ -38,7 +44,4 @@ root.render(
     </React.StrictMode>
 )
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()
