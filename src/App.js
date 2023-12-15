@@ -1,22 +1,31 @@
 import React from 'react'
 import './App.css'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const Divisoria = styled.h1`
+    background-color: red;
+    color: blue;
+    font-style: initial;
+
+;
+`
 
 
 function App() {
     return (
         <div>
-            <h1>Home</h1>
+            <Divisoria>Home</Divisoria>
             <ul>
                 {' '}
                 <li>
                     <Link to={'/'}>Home</Link>
                 </li>
                 <li>
-                    <Link to={'contato'}>Contato</Link>
+                    <Link to={'/contato'}>Contato</Link>
                 </li>
                 <li>
-                    <Link to={'informações'}>Informações</Link>
+                    <Link to={'/informações'}>Informações</Link>
                 </li>
             </ul>
         </div>
